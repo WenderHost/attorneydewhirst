@@ -1,0 +1,277 @@
+/*
+Theme Name: Minimal WordPress Portfolio
+Theme URI: http://www.curtziegler.com/
+Description: Minimal wordpress theme designed by <a href="http://www.curtziegler.com/">Curt Ziegler</a>. 03/19/2019 - Bumped version from 1.0 to 9.9 to prevent update nag.
+Version: 9.9
+Author: Curt Ziegler
+Author URI: http://www.curtziegler.com/
+Tags: minimal, portfolio
+*/
+
+html, body, form, h1, h2, h3, h4, h5, h6, p, img, a{margin:0;	padding:0; outline:0; border:0;}
+
+/* EDIT THE PRIMARY COLOR HERE!! */
+h3, a, .tagline p a, ul.clean li a:hover, ul li.clean a:hover, ul.large li a:hover span{	color:#548194; /* b86443 */}
+
+/* Colors */
+html{background-color: #473621;}
+body{background: #473621 url(/wp-content/themes/minimal/images/bkgrd.body.png) repeat-x; color: #473621}
+.main, .tagline p{/*background:url(/wp-content/themes/minimal/images/bg_top_inner.jpg) repeat-x top;*/ background-color: #f7efe5}
+.main{border-color: #7fa1af; border-width: 0px 2px 2px 2px; border-style: solid; background-image: url(/wp-content/themes/minimal/images/bkgrd.main.png); background-repeat: repeat-x;}
+.footer, .footer a{/*	background:#f0f0f0 url(/wp-content/themes/minimal/images/bg_bottom_outer.gif) repeat-x top;*/ color:#947654; }
+a:hover{color:#1a3a47;}
+.tagline p{color: #473621}
+.tagline p a:hover{color:#a9c0c9;}
+.menu ul{border-top:1px dotted #548194; border-bottom:1px dotted #548194;}
+.menu ul li a{color:#473621;}
+.menu ul li a:hover,
+.menu ul li a.active,
+.menu ul li.current_page_item a,
+.menu ul li.current_page_parent a,
+.current_page_item a{color:#548194;}
+.meta{background-color: #d4dfe4;}
+img.border-thin{padding:1px; border:1px solid #d4dfe4;}
+img.border-thick{padding:1px; border:4px solid #d4dfe4;}
+.footer .current_page_item a, .footer a:hover{color: #d4dfe4}
+.pod h6, .pod ul li a{color: #473621}
+
+
+body{font-family:Arial, Helvetica, sans-serif; font-size:0.9em;	color:#473621;}	
+.contentwidth{width:980px; /* 940 and no padding */	padding: 0 20px; margin:0 auto;}
+
+h1, h2, h3, h4, h5, h6 {  padding:8px 0; }
+h1 { font-size:2.4em; }
+h2 { font-size:2.2em; }
+h3 { font-size:1.6em; }
+h4 { font-size:1.5em; }
+h5 { font-size:1.4em; }
+h6 { font-size:1.2em; letter-spacing:-0.02em; }
+
+hr{color:#f7efe5; background-color:#f7efe5; border:1px dotted #548194; border-style:none none dotted;}
+p{padding:8px 0; line-height:140%;}	
+li{padding:3px 0;}
+a{text-decoration:none;}
+.line{border-bottom:1px dotted #ccc;}
+.pod{padding:0 0 20px 0;}
+
+
+
+/* If nested ul's used in something such as a category list */
+/* Does not work in IE6 but everything modern. */
+.pod ul li > ul{margin:0; padding:3px 0 3px 20px;}
+.pod ul{margin:0; padding:0;}
+.pod ul li{list-style-type:none; margin:0; padding:3px 0;}
+.alternate, .hidden{display:none;}
+.left{float:left;}
+.right{float:right;}
+
+img.left, img.alignleft{float:left;	margin:10px 10px 5px 0;}
+img.right, img.alignright{float:right; margin:10px 0 5px 10px;}
+img.center,img.aligncenter{	display:block;	margin:0 auto;}
+
+.main{	padding-bottom:20px;}
+.logo{padding:30px 0 10px 0;}
+.logo h1{margin:0; padding:0; text-align:center; font-weight:normal; font-size:3em;}
+.logo h1 a{color:#fff; padding:18px 30px 15px 30px;	/*line-height:80px;*/ background:#333333 url(/wp-content/themes/minimal/images/logo_cutout.gif) no-repeat bottom right;}
+.logo h1 a:hover{color:#ccc;}
+
+/* Added to support image logos */
+.logo h1 a.custom{background:none;}
+.menu{padding:0 0 10px 0; text-align:center;}
+.menu ul{margin:0 auto;	padding:2px 0 0 0; text-align:center; /*width:80%*/}
+.menu ul li{list-style-type:none; display:inline;}
+.menu ul li a{padding:0 20px; line-height:40px; text-transform:uppercase; font-weight:bold;}
+
+ul.sub-menu{margin:0; padding:0;}
+ul.sub-menu li{margin:0; padding:0;	list-style-type:none; display:inline;}
+ul.sub-menu li a{padding:5px 10px 0 0; font-size:75%;}
+ul.sub-menu li a.active{color:#333;}
+ul.footer-menu{margin:0; padding:0;}
+ul.footer-menu li{display:inline; text-align:center;}
+ul.footer-menu li a{padding:0 5px; font-size:95%;}
+
+.tagline{padding:20px 0;}
+.tagline p{text-align:center; font-size:3em; line-height:1.1em; letter-spacing:-0.04em;}
+
+p.tags{display: none}
+p.tags a{background:#eee; padding:1px 6px; border-left:2px solid #ddd;}
+
+
+ul.clean, .home ul{margin:0; padding:0; border-top:1px solid #ccc;}
+ul.clean li, .home li.clean{margin:0; padding:0; ist-style-type:none; display:inline;}
+ul.clean li a, .home li.clean a{color:#333; display:block; border-bottom:1px solid #ccc; padding:6px 10px; font-size:90%;}
+ul.clean li a.highlight, .home li.clean a.highlight{background:#f0f0f0;}
+ul.clean li a span, .home li.clean a span{margin-right:10px;}
+
+
+.column{float:left;	margin-right:40px;	padding:20px 0;}
+.last{margin:0;}
+.column300{width: 300px}
+.column400{width: 400px}
+.column450{width: 450px}
+.column500{width: 500px}
+.column600{width: 600px}
+.commentslink{padding-top:20px;}
+.meta{padding:3px 10px; font-size:75%;}
+.date{	padding-right:10px;	font-weight:bold;}
+a.rss{background:url(/wp-content/themes/minimal/images/icon_rss.gif) no-repeat bottom right; height:24px; width:15px;}
+ul.social{margin:0;	padding:0;}
+ul.social li{margin:0; padding:0; list-style-type:none;	display:inline;}
+ul.social li a{display:block; float:left;width:32px; height:32px; padding:0 15px 20px 0;background-repeat:no-repeat;}
+
+.footer-outer{	background:#f0f0f0;	border-top:1px solid #f0f0f0;}
+.footer .contentwidth{	padding:20px 0 80px 0;}
+.footer{	text-align:center;		font-size:80%;}
+
+
+/* Contact Form */
+#message{	color:#990000;	font-weight:bold;}
+.standardForm{	margin-bottom:15px;}
+.standardForm .textbox, .standardForm .textarea{	width:500px;	padding:7px;	font-size:110%;	font-weight:bold;}
+#commentform input, #commentform textarea{	width:300px;	padding:7px;	font-size:90%;	font-weight:bold;}
+.standardForm .textbox, .standardForm .textarea,  .standardForm .submit,
+#commentform input, #commentform textarea
+{	border:3px solid #eee;	background:#fefefe;}
+#commentform #comment{	width:450px;	font-size:100%;	font-weight:normal;	font-family:Arial, Helvetica, sans-serif;}
+#commentform #submit{	width:150px;}
+#commentform label{	margin:0 0 0 10px;}
+.standardForm .field{	padding:5px 0;}
+.standardForm label{	font-weight:bold;	display:block;}
+.standardForm .textbox{	display:block;}
+.standardForm .textarea{	height:90px;}
+.standardForm .submit,
+#commentform #submit{	font-weight:bold;	background:#ccc;	padding:5px;	color:#fff;}
+
+/* Searchform */
+#searchform .screen-reader-text{	display:none;}
+#searchform #s{	padding:5px;	border:0;	border-left:1px solid #eee;	border-bottom:1px solid #eee;	background:#fff;	width:200px;}
+#searchform #searchsubmit{	background:#fff;	border:0;	font-weight:bold;	width:80px;}
+
+/* Comments */
+h3#comments,
+#respond h3
+{
+	font-size:95%;
+	color:#333;
+}
+OL.commentlist,
+OL.commentlist li
+{
+	list-style-type:none;
+	margin:0;
+	padding:0;
+}
+OL.commentlist .vcard
+{
+	border-top:1px dotted #ccc;
+	margin:10px 0;
+	padding:10px 0;
+}
+OL.commentlist .avatar
+{
+	float:left;
+	border:1px solid #ccc;
+	padding:1px;
+}
+OL.commentlist .commentmetadata
+{
+	float:right;
+	font-size:70%;
+}
+OL.commentlist .fn
+{
+	font-weight:bold;
+	float:left;
+	padding:10px;
+}
+OL.commentlist .says
+{
+	display:none;
+}
+OL.commentlist p
+{
+	display:block;
+	clear:both;
+	font-size:90%;
+}
+OL.commentlist a.comment-reply-link
+{
+	font-weight:bold;
+	font-size:90%;
+}
+
+
+
+
+
+
+.excerpt
+{
+	font-size:85%;
+}
+
+.aligncenter,
+div.aligncenter {
+   display: block;
+   margin-left: auto;
+   margin-right: auto;
+   text-align:center;
+}
+
+.alignleft {
+   float: left;
+}
+
+.alignright {
+   float: right;
+}
+
+.wp-caption {
+   border: 1px solid #ddd;
+   text-align: center;
+   background-color: #f3f3f3;
+   padding-top: 4px;
+   margin: 10px;
+   /* optional rounded corners for browsers that support it */
+   -moz-border-radius: 3px;
+   -khtml-border-radius: 3px;
+   -webkit-border-radius: 3px;
+   border-radius: 3px;
+}
+
+.wp-caption img {
+   margin: 0;
+   padding: 0;
+   border: 0 none;
+}
+
+.wp-caption p.wp-caption-text {
+   font-size: 11px;
+   line-height: 17px;
+   padding: 0 4px 5px;
+   margin: 0;
+}
+
+
+
+
+
+/* clearfix start */ 
+.clearfix:after {
+    content: ".";
+    display: block;
+    clear: both;
+    visibility: hidden;
+    line-height: 0;
+    height: 0;
+}
+.clearfix {
+    display: inline-block;
+}
+html[xmlns] .clearfix {
+    display: block;
+}
+* html .clearfix {
+    height: 1%;
+}
+/* clearfix end */ 
